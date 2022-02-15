@@ -13,4 +13,13 @@ for (const product of products) {
         output.push(product);
     }
 }
+// console.log(output);
+
+
+
+for (const product of products) {
+    if (product.toLowerCase().includes(searching.toLowerCase())) {
+        output.push(product);
+    }
+}
 console.log(output);
