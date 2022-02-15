@@ -1,12 +1,12 @@
 const products = [
     'dell hardcore i29  GB laptop',
     'iPhone 1TB camera flashlight mobile',
-    'yellow laptop with blalck camera',
+    'dell yellow laptop with blalck camera',
     '1x59 Lenovo commercial laptop',
     'htc low price mobile',
-    'purple color phone witg Laptop'
+    'dell purple color phone witg Laptop'
 ];
-const searching = 'laptop'
+const searching = 'dell'
 const output = [];
 for (const product of products) {
     if (product.toLowerCase().indexOf(searching.toLowerCase()) != -1) {
@@ -19,6 +19,13 @@ for (const product of products) {
 
 for (const product of products) {
     if (product.toLowerCase().includes(searching.toLowerCase())) {
+        output.push(product);
+    }
+}
+console.log(output);
+
+for (const product of products) {
+    if (product.toLowerCase().startsWith(searching.toLowerCase())) {
         output.push(product);
     }
 }
